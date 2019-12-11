@@ -1,0 +1,51 @@
+@import "./variables";
+
+body,
+html {
+  @import url("https://fonts.googleapis.com/css?family=Chewy|Raleway&display=swap");
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: Chewy, cursive;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #1b1b1d;
+  color: $mainColor;
+}
+
+button {
+  margin-left: auto;
+  border: 3px $mainColor solid;
+  background: $background;
+  padding: 0 10px;
+  font-family: Chewy, cursive;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 darken($mainColor, 10%);
+  transform: translate(0px, 0px);
+  box-shadow: 2px 2px 0 darken($mainColor, 10%);
+  color: black;
+}
+
+button:active {
+  animation: glowing 100ms linear forwards;
+}
+
+button:hover {
+  animation: glowing 100ms linear forwards;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 2px 2px 0 darken($mainColor, 10%);
+    transform: translate(0px, 0px);
+  }
+  100% {
+    box-shadow: 0px 0px 0 darken($mainColor, 10%);
+    transform: translate(2px, 2px);
+  }
+}

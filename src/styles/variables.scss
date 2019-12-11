@@ -1,0 +1,36 @@
+$tileSize: 100px;
+$mainColor: #3e73f0;
+// $mainColor: #ac3925;
+$background: lighten($mainColor, 15%);
+$tileColor: #313131;
+
+$midrangeColor: #f65e3b;
+$hiendColor: #edc22e;
+
+$colors: (
+  "2": lighten($midrangeColor, 40%),
+  "4": lighten($midrangeColor, 35%),
+  "8": lighten($midrangeColor, 30%),
+  "16": lighten($midrangeColor, 20%),
+  "32": lighten($midrangeColor, 10%),
+  "64": $midrangeColor,
+  "128": lighten($hiendColor, 30%),
+  "256": lighten($hiendColor, 25%),
+  "512": lighten($hiendColor, 20%),
+  "1024": lighten($hiendColor, 15%),
+  "2048": $hiendColor
+);
+
+$glow: (
+  "2": 0px,
+  "4": 0px,
+  "8": 1px,
+  "16": 2px,
+  "32": 3px,
+  "64": 5px,
+  "128": 8px,
+  "256": 10px,
+  "512": 12px,
+  "1024": 14px,
+  "2048": 20px
+);
